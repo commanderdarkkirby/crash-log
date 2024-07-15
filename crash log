@@ -1,0 +1,538 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2024-07-14 18:33:09
+Description: Rendering entity in world
+
+java.lang.NoSuchFieldError: head
+	at net.knighy.knighysadditions.client.renderer.EnhancedRayiteArmorRenderer.<init>(EnhancedRayiteArmorRenderer.java:16) ~[knighys_additions-1REDUX.showcaese-forge-1.20.1.jar%23406!/:?] {re:classloading}
+	at net.knighy.knighysadditions.item.EnhancedRayiteItem$2.getHumanoidArmorModel(EnhancedRayiteItem.java:103) ~[knighys_additions-1REDUX.showcaese-forge-1.20.1.jar%23406!/:?] {re:classloading}
+	at net.minecraftforge.client.extensions.common.IClientItemExtensions.getGenericArmorModel(IClientItemExtensions.java:129) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.getArmorModel(ForgeHooksClient.java:326) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.getArmorModelHook(HumanoidArmorLayer.java:149) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:overlay,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:overlay,pl:mixin:APP:playerAnimator-common.mixins.json:ArmorFeatureRendererMixin from mod playeranimator,pl:mixin:APP:fabric-rendering-v1.mixins.json:ArmorFeatureRendererMixin from mod fabric_rendering_v1,pl:mixin:APP:connectormod.mixins.json:HumanoidArmorLayerMixin from mod connectormod,pl:mixin:APP:l2complements.mixins.json:HumanoidArmorLayerMixin from mod l2complements,pl:mixin:APP:alexscaves.mixins.json:client.HumanoidArmorLayerMixin from mod alexscaves,pl:mixin:APP:structure_gel.mixins.json:ArmorTrimMixins$HumanoidArmorLayerMixin from mod structure_gel,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.m_117118_(HumanoidArmorLayer.java:57) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:overlay,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:overlay,pl:mixin:APP:playerAnimator-common.mixins.json:ArmorFeatureRendererMixin from mod playeranimator,pl:mixin:APP:fabric-rendering-v1.mixins.json:ArmorFeatureRendererMixin from mod fabric_rendering_v1,pl:mixin:APP:connectormod.mixins.json:HumanoidArmorLayerMixin from mod connectormod,pl:mixin:APP:l2complements.mixins.json:HumanoidArmorLayerMixin from mod l2complements,pl:mixin:APP:alexscaves.mixins.json:client.HumanoidArmorLayerMixin from mod alexscaves,pl:mixin:APP:structure_gel.mixins.json:ArmorTrimMixins$HumanoidArmorLayerMixin from mod structure_gel,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.m_6494_(HumanoidArmorLayer.java:44) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:overlay,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:overlay,pl:mixin:APP:playerAnimator-common.mixins.json:ArmorFeatureRendererMixin from mod playeranimator,pl:mixin:APP:fabric-rendering-v1.mixins.json:ArmorFeatureRendererMixin from mod fabric_rendering_v1,pl:mixin:APP:connectormod.mixins.json:HumanoidArmorLayerMixin from mod connectormod,pl:mixin:APP:l2complements.mixins.json:HumanoidArmorLayerMixin from mod l2complements,pl:mixin:APP:alexscaves.mixins.json:client.HumanoidArmorLayerMixin from mod alexscaves,pl:mixin:APP:structure_gel.mixins.json:ArmorTrimMixins$HumanoidArmorLayerMixin from mod structure_gel,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.m_6494_(HumanoidArmorLayer.java:29) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:overlay,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:overlay,pl:mixin:APP:playerAnimator-common.mixins.json:ArmorFeatureRendererMixin from mod playeranimator,pl:mixin:APP:fabric-rendering-v1.mixins.json:ArmorFeatureRendererMixin from mod fabric_rendering_v1,pl:mixin:APP:connectormod.mixins.json:HumanoidArmorLayerMixin from mod connectormod,pl:mixin:APP:l2complements.mixins.json:HumanoidArmorLayerMixin from mod l2complements,pl:mixin:APP:alexscaves.mixins.json:client.HumanoidArmorLayerMixin from mod alexscaves,pl:mixin:APP:structure_gel.mixins.json:ArmorTrimMixins$HumanoidArmorLayerMixin from mod structure_gel,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.LivingEntityRenderer.m_7392_(LivingEntityRenderer.java:131) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:voidscape:entityalpha,xf:fml:voidscape:entityalpharendertype,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:voidscape:entityalpha,xf:fml:voidscape:entityalpharendertype,pl:mixin:APP:citadel.mixins.json:client.LivingEntityRendererMixin from mod citadel,pl:mixin:APP:modernfix-common.mixins.json:safety.LivingEntityRendererMixin from mod modernfix,pl:mixin:APP:lost_aether_content.mixins.json:LivingEntityRendererMixin from mod lost_aether_content,pl:mixin:APP:majruszlibrary-common.mixins.json:MixinLivingEntityRenderer from mod majruszlibrary,pl:mixin:APP:identity.mixins.json:accessor.LivingEntityRendererAccessor from mod identity,pl:mixin:APP:playerAnimator-common.mixins.json:firstPerson.LivingEntityRendererMixin from mod playeranimator,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.redirect$dkd000$identity$redirectRender(PlayerRenderer.java:3142) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:getarmpose,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:getarmpose,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.m_7392_(PlayerRenderer.java:63) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:getarmpose,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:getarmpose,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.m_7392_(PlayerRenderer.java:44) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:getarmpose,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:getarmpose,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.EntityRenderDispatcher.m_114384_(EntityRenderDispatcher.java:140) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:playerAnimator-common.mixins.json:firstPerson.EntityRenderDispatcherMixin from mod playeranimator,pl:mixin:APP:soulfired.mixins.json:client.EntityRenderDispatcherMixin from mod soulfired,pl:mixin:APP:pehkui.mixins.json:client.compat115plus.EntityRenderDispatcherMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat117plus.EntityRenderDispatcherMixin from mod pehkui,pl:mixin:APP:rubidium_extras.mixins.json:EntityDistance.MaxDistanceEntity from mod rubidium_extras,pl:mixin:APP:embeddiumplus.mixin.json:entitydistance.EntityDispatcherMixin from mod embeddiumplus,pl:mixin:APP:identity.mixins.json:ShadowMixin from mod identity,pl:mixin:APP:friendsandfoes-common.mixins.json:EntityRenderDispatcherMixin from mod friendsandfoes,pl:mixin:APP:embeddium.mixins.json:features.render.entity.shadows.EntityRenderDispatcherMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_279817_(InventoryScreen.java:138) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:1191) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,re:classloading,pl:mixin:APP:embeddium.mixins.json:workarounds.event_loop.RenderSystemMixin from mod embeddium,pl:mixin:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_280432_(InventoryScreen.java:137) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsAngle(InventoryScreen.java:116) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_274545_(InventoryScreen.java:97) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_7286_(InventoryScreen.java:90) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.m_88315_(AbstractContainerScreen.java:92) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:majruszlibrary-forge.mixins.json:MixinAbstractContainerScreen from mod majruszlibrary,pl:mixin:APP:l2screentracker.mixins.json:AbstractContainerScreenMixin from mod l2screentracker,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen.m_88315_(EffectRenderingInventoryScreen.java:28) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_88315_(InventoryScreen.java:76) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_280264_(Screen.java:109) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fabric-screen-api-v1.mixins.json:ScreenMixin from mod fabric_screen_api_v1,pl:mixin:APP:fabric-screen-api-v1.mixins.json:ScreenAccessor from mod fabric_screen_api_v1,pl:mixin:APP:cumulus_menus.mixins.json:client.accessor.ScreenAccessor from mod cumulus_menus,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor from mod aether,pl:mixin:APP:relics.mixins.json:MixinScreen from mod relics,pl:mixin:APP:identity.mixins.json:accessor.ScreenAccessor from mod identity,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:427) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:420) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraft.client.renderer.GameRenderer.m_109093_(GameRenderer.java:965) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:reach.client.compat1202minus.GameRendererMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat115plus.GameRendererMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat1193plus.GameRendererMixin from mod pehkui,pl:mixin:APP:rubidium_extras.mixins.json:TotalDarkness.MixinGameRenderer from mod rubidium_extras,pl:mixin:APP:rubidium_extras.mixins.json:Zoom.GameRendererMixin from mod rubidium_extras,pl:mixin:APP:embeddiumplus.mixin.json:darkness.GameRendererMixin from mod embeddiumplus,pl:mixin:APP:alexscaves.mixins.json:client.GameRendererMixin from mod alexscaves,pl:mixin:APP:embeddium.mixins.json:features.gui.hooks.console.GameRendererMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1146) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:718) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[1.20.1-forge-47.2.0.jar:?] {re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.knighy.knighysadditions.client.renderer.EnhancedRayiteArmorRenderer.<init>(EnhancedRayiteArmorRenderer.java:16) ~[knighys_additions-1REDUX.showcaese-forge-1.20.1.jar%23406!/:?] {re:classloading}
+	at net.knighy.knighysadditions.item.EnhancedRayiteItem$2.getHumanoidArmorModel(EnhancedRayiteItem.java:103) ~[knighys_additions-1REDUX.showcaese-forge-1.20.1.jar%23406!/:?] {re:classloading}
+	at net.minecraftforge.client.extensions.common.IClientItemExtensions.getGenericArmorModel(IClientItemExtensions.java:129) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.getArmorModel(ForgeHooksClient.java:326) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.getArmorModelHook(HumanoidArmorLayer.java:149) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:overlay,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:overlay,pl:mixin:APP:playerAnimator-common.mixins.json:ArmorFeatureRendererMixin from mod playeranimator,pl:mixin:APP:fabric-rendering-v1.mixins.json:ArmorFeatureRendererMixin from mod fabric_rendering_v1,pl:mixin:APP:connectormod.mixins.json:HumanoidArmorLayerMixin from mod connectormod,pl:mixin:APP:l2complements.mixins.json:HumanoidArmorLayerMixin from mod l2complements,pl:mixin:APP:alexscaves.mixins.json:client.HumanoidArmorLayerMixin from mod alexscaves,pl:mixin:APP:structure_gel.mixins.json:ArmorTrimMixins$HumanoidArmorLayerMixin from mod structure_gel,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.m_117118_(HumanoidArmorLayer.java:57) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:overlay,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:overlay,pl:mixin:APP:playerAnimator-common.mixins.json:ArmorFeatureRendererMixin from mod playeranimator,pl:mixin:APP:fabric-rendering-v1.mixins.json:ArmorFeatureRendererMixin from mod fabric_rendering_v1,pl:mixin:APP:connectormod.mixins.json:HumanoidArmorLayerMixin from mod connectormod,pl:mixin:APP:l2complements.mixins.json:HumanoidArmorLayerMixin from mod l2complements,pl:mixin:APP:alexscaves.mixins.json:client.HumanoidArmorLayerMixin from mod alexscaves,pl:mixin:APP:structure_gel.mixins.json:ArmorTrimMixins$HumanoidArmorLayerMixin from mod structure_gel,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.m_6494_(HumanoidArmorLayer.java:44) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:overlay,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:overlay,pl:mixin:APP:playerAnimator-common.mixins.json:ArmorFeatureRendererMixin from mod playeranimator,pl:mixin:APP:fabric-rendering-v1.mixins.json:ArmorFeatureRendererMixin from mod fabric_rendering_v1,pl:mixin:APP:connectormod.mixins.json:HumanoidArmorLayerMixin from mod connectormod,pl:mixin:APP:l2complements.mixins.json:HumanoidArmorLayerMixin from mod l2complements,pl:mixin:APP:alexscaves.mixins.json:client.HumanoidArmorLayerMixin from mod alexscaves,pl:mixin:APP:structure_gel.mixins.json:ArmorTrimMixins$HumanoidArmorLayerMixin from mod structure_gel,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.m_6494_(HumanoidArmorLayer.java:29) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:overlay,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:overlay,pl:mixin:APP:playerAnimator-common.mixins.json:ArmorFeatureRendererMixin from mod playeranimator,pl:mixin:APP:fabric-rendering-v1.mixins.json:ArmorFeatureRendererMixin from mod fabric_rendering_v1,pl:mixin:APP:connectormod.mixins.json:HumanoidArmorLayerMixin from mod connectormod,pl:mixin:APP:l2complements.mixins.json:HumanoidArmorLayerMixin from mod l2complements,pl:mixin:APP:alexscaves.mixins.json:client.HumanoidArmorLayerMixin from mod alexscaves,pl:mixin:APP:structure_gel.mixins.json:ArmorTrimMixins$HumanoidArmorLayerMixin from mod structure_gel,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.LivingEntityRenderer.m_7392_(LivingEntityRenderer.java:131) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:voidscape:entityalpha,xf:fml:voidscape:entityalpharendertype,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:voidscape:entityalpha,xf:fml:voidscape:entityalpharendertype,pl:mixin:APP:citadel.mixins.json:client.LivingEntityRendererMixin from mod citadel,pl:mixin:APP:modernfix-common.mixins.json:safety.LivingEntityRendererMixin from mod modernfix,pl:mixin:APP:lost_aether_content.mixins.json:LivingEntityRendererMixin from mod lost_aether_content,pl:mixin:APP:majruszlibrary-common.mixins.json:MixinLivingEntityRenderer from mod majruszlibrary,pl:mixin:APP:identity.mixins.json:accessor.LivingEntityRendererAccessor from mod identity,pl:mixin:APP:playerAnimator-common.mixins.json:firstPerson.LivingEntityRendererMixin from mod playeranimator,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.redirect$dkd000$identity$redirectRender(PlayerRenderer.java:3142) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:getarmpose,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:getarmpose,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.m_7392_(PlayerRenderer.java:63) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:getarmpose,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:getarmpose,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.player.PlayerRenderer.m_7392_(PlayerRenderer.java:44) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,xf:fml:voidscape:getarmpose,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,xf:fml:voidscape:getarmpose,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.entity.EntityRenderDispatcher.m_114384_(EntityRenderDispatcher.java:140) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:playerAnimator-common.mixins.json:firstPerson.EntityRenderDispatcherMixin from mod playeranimator,pl:mixin:APP:soulfired.mixins.json:client.EntityRenderDispatcherMixin from mod soulfired,pl:mixin:APP:pehkui.mixins.json:client.compat115plus.EntityRenderDispatcherMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat117plus.EntityRenderDispatcherMixin from mod pehkui,pl:mixin:APP:rubidium_extras.mixins.json:EntityDistance.MaxDistanceEntity from mod rubidium_extras,pl:mixin:APP:embeddiumplus.mixin.json:entitydistance.EntityDispatcherMixin from mod embeddiumplus,pl:mixin:APP:identity.mixins.json:ShadowMixin from mod identity,pl:mixin:APP:friendsandfoes-common.mixins.json:EntityRenderDispatcherMixin from mod friendsandfoes,pl:mixin:APP:embeddium.mixins.json:features.render.entity.shadows.EntityRenderDispatcherMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_279817_(InventoryScreen.java:138) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:1191) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,re:classloading,pl:mixin:APP:embeddium.mixins.json:workarounds.event_loop.RenderSystemMixin from mod embeddium,pl:mixin:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_280432_(InventoryScreen.java:137) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsAngle(InventoryScreen.java:116) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_274545_(InventoryScreen.java:97) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_7286_(InventoryScreen.java:90) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.m_88315_(AbstractContainerScreen.java:92) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:majruszlibrary-forge.mixins.json:MixinAbstractContainerScreen from mod majruszlibrary,pl:mixin:APP:l2screentracker.mixins.json:AbstractContainerScreenMixin from mod l2screentracker,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen.m_88315_(EffectRenderingInventoryScreen.java:28) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_88315_(InventoryScreen.java:76) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_280264_(Screen.java:109) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fabric-screen-api-v1.mixins.json:ScreenMixin from mod fabric_screen_api_v1,pl:mixin:APP:fabric-screen-api-v1.mixins.json:ScreenAccessor from mod fabric_screen_api_v1,pl:mixin:APP:cumulus_menus.mixins.json:client.accessor.ScreenAccessor from mod cumulus_menus,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor from mod aether,pl:mixin:APP:relics.mixins.json:MixinScreen from mod relics,pl:mixin:APP:identity.mixins.json:accessor.ScreenAccessor from mod identity,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:427) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:420) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+-- Entity being rendered --
+Details:
+	Entity Type: minecraft:player (net.minecraft.client.player.LocalPlayer)
+	Entity ID: 312
+	Entity Name: comanderdarkirby
+	Entity's Exact location: -27.16, 141.00, 155.15
+	Entity's Block location: World: (-28,141,155), Section: (at 4,13,11 in -2,8,9; chunk contains blocks -32,-64,144 to -17,319,159), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.client.renderer.entity.EntityRenderDispatcher.m_114384_(EntityRenderDispatcher.java:140) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:playerAnimator-common.mixins.json:firstPerson.EntityRenderDispatcherMixin from mod playeranimator,pl:mixin:APP:soulfired.mixins.json:client.EntityRenderDispatcherMixin from mod soulfired,pl:mixin:APP:pehkui.mixins.json:client.compat115plus.EntityRenderDispatcherMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat117plus.EntityRenderDispatcherMixin from mod pehkui,pl:mixin:APP:rubidium_extras.mixins.json:EntityDistance.MaxDistanceEntity from mod rubidium_extras,pl:mixin:APP:embeddiumplus.mixin.json:entitydistance.EntityDispatcherMixin from mod embeddiumplus,pl:mixin:APP:identity.mixins.json:ShadowMixin from mod identity,pl:mixin:APP:friendsandfoes-common.mixins.json:EntityRenderDispatcherMixin from mod friendsandfoes,pl:mixin:APP:embeddium.mixins.json:features.render.entity.shadows.EntityRenderDispatcherMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_279817_(InventoryScreen.java:138) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:1191) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,re:classloading,pl:mixin:APP:embeddium.mixins.json:workarounds.event_loop.RenderSystemMixin from mod embeddium,pl:mixin:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_280432_(InventoryScreen.java:137) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsAngle(InventoryScreen.java:116) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_274545_(InventoryScreen.java:97) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_7286_(InventoryScreen.java:90) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.m_88315_(AbstractContainerScreen.java:92) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:majruszlibrary-forge.mixins.json:MixinAbstractContainerScreen from mod majruszlibrary,pl:mixin:APP:l2screentracker.mixins.json:AbstractContainerScreenMixin from mod l2screentracker,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen.m_88315_(EffectRenderingInventoryScreen.java:28) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_88315_(InventoryScreen.java:76) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_280264_(Screen.java:109) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fabric-screen-api-v1.mixins.json:ScreenMixin from mod fabric_screen_api_v1,pl:mixin:APP:fabric-screen-api-v1.mixins.json:ScreenAccessor from mod fabric_screen_api_v1,pl:mixin:APP:cumulus_menus.mixins.json:client.accessor.ScreenAccessor from mod cumulus_menus,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor from mod aether,pl:mixin:APP:relics.mixins.json:MixinScreen from mod relics,pl:mixin:APP:identity.mixins.json:accessor.ScreenAccessor from mod identity,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:427) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:420) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraft.client.renderer.GameRenderer.m_109093_(GameRenderer.java:965) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:reach.client.compat1202minus.GameRendererMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat115plus.GameRendererMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat1193plus.GameRendererMixin from mod pehkui,pl:mixin:APP:rubidium_extras.mixins.json:TotalDarkness.MixinGameRenderer from mod rubidium_extras,pl:mixin:APP:rubidium_extras.mixins.json:Zoom.GameRendererMixin from mod rubidium_extras,pl:mixin:APP:embeddiumplus.mixin.json:darkness.GameRendererMixin from mod embeddiumplus,pl:mixin:APP:alexscaves.mixins.json:client.GameRendererMixin from mod alexscaves,pl:mixin:APP:embeddium.mixins.json:features.gui.hooks.console.GameRendererMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1146) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:718) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[1.20.1-forge-47.2.0.jar:?] {re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Renderer details --
+Details:
+	Assigned renderer: net.minecraft.client.renderer.entity.player.PlayerRenderer@395732f0
+	Location: 0.00,0.00,0.00 - World: (0,0,0), Section: (at 0,0,0 in 0,0,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Rotation: 0.0
+	Delta: 1.0
+Stacktrace:
+	at net.minecraft.client.renderer.entity.EntityRenderDispatcher.m_114384_(EntityRenderDispatcher.java:140) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:playerAnimator-common.mixins.json:firstPerson.EntityRenderDispatcherMixin from mod playeranimator,pl:mixin:APP:soulfired.mixins.json:client.EntityRenderDispatcherMixin from mod soulfired,pl:mixin:APP:pehkui.mixins.json:client.compat115plus.EntityRenderDispatcherMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat117plus.EntityRenderDispatcherMixin from mod pehkui,pl:mixin:APP:rubidium_extras.mixins.json:EntityDistance.MaxDistanceEntity from mod rubidium_extras,pl:mixin:APP:embeddiumplus.mixin.json:entitydistance.EntityDispatcherMixin from mod embeddiumplus,pl:mixin:APP:identity.mixins.json:ShadowMixin from mod identity,pl:mixin:APP:friendsandfoes-common.mixins.json:EntityRenderDispatcherMixin from mod friendsandfoes,pl:mixin:APP:embeddium.mixins.json:features.render.entity.shadows.EntityRenderDispatcherMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_279817_(InventoryScreen.java:138) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:1191) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,re:classloading,pl:mixin:APP:embeddium.mixins.json:workarounds.event_loop.RenderSystemMixin from mod embeddium,pl:mixin:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_280432_(InventoryScreen.java:137) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.renderEntityInInventoryFollowsAngle(InventoryScreen.java:116) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_274545_(InventoryScreen.java:97) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_7286_(InventoryScreen.java:90) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.AbstractContainerScreen.m_88315_(AbstractContainerScreen.java:92) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:majruszlibrary-forge.mixins.json:MixinAbstractContainerScreen from mod majruszlibrary,pl:mixin:APP:l2screentracker.mixins.json:AbstractContainerScreenMixin from mod l2screentracker,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen.m_88315_(EffectRenderingInventoryScreen.java:28) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.inventory.InventoryScreen.m_88315_(InventoryScreen.java:76) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:client.compat120plus.compat1201minus.InventoryScreenMixin from mod pehkui,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.m_280264_(Screen.java:109) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fabric-screen-api-v1.mixins.json:ScreenMixin from mod fabric_screen_api_v1,pl:mixin:APP:fabric-screen-api-v1.mixins.json:ScreenAccessor from mod fabric_screen_api_v1,pl:mixin:APP:cumulus_menus.mixins.json:client.accessor.ScreenAccessor from mod cumulus_menus,pl:mixin:APP:aether.mixins.json:client.accessor.ScreenAccessor from mod aether,pl:mixin:APP:relics.mixins.json:MixinScreen from mod relics,pl:mixin:APP:identity.mixins.json:accessor.ScreenAccessor from mod identity,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:427) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:420) ~[forge-1.20.1-47.2.0-universal.jar%23489!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at net.minecraft.client.renderer.GameRenderer.m_109093_(GameRenderer.java:965) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:reach.client.compat1202minus.GameRendererMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat115plus.GameRendererMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat1193plus.GameRendererMixin from mod pehkui,pl:mixin:APP:rubidium_extras.mixins.json:TotalDarkness.MixinGameRenderer from mod rubidium_extras,pl:mixin:APP:rubidium_extras.mixins.json:Zoom.GameRendererMixin from mod rubidium_extras,pl:mixin:APP:embeddiumplus.mixin.json:darkness.GameRendererMixin from mod embeddiumplus,pl:mixin:APP:alexscaves.mixins.json:client.GameRendererMixin from mod alexscaves,pl:mixin:APP:embeddium.mixins.json:features.gui.hooks.console.GameRendererMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1146) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:718) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[1.20.1-forge-47.2.0.jar:?] {re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.screens.inventory.InventoryScreen
+	Mouse location: Scaled: (240, 135). Absolute: (960.000000, 540.000000)
+	Screen size: Scaled: (480, 270). Absolute: (1920, 1080). Scale factor of 4.000000
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.m_109093_(GameRenderer.java:965) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:pehkui.mixins.json:reach.client.compat1202minus.GameRendererMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat115plus.GameRendererMixin from mod pehkui,pl:mixin:APP:pehkui.mixins.json:client.compat1193plus.GameRendererMixin from mod pehkui,pl:mixin:APP:rubidium_extras.mixins.json:TotalDarkness.MixinGameRenderer from mod rubidium_extras,pl:mixin:APP:rubidium_extras.mixins.json:Zoom.GameRendererMixin from mod rubidium_extras,pl:mixin:APP:embeddiumplus.mixin.json:darkness.GameRendererMixin from mod embeddiumplus,pl:mixin:APP:alexscaves.mixins.json:client.GameRendererMixin from mod alexscaves,pl:mixin:APP:embeddium.mixins.json:features.gui.hooks.console.GameRendererMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1146) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:718) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[1.20.1-forge-47.2.0.jar:?] {re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['comanderdarkirby'/312, l='ClientLevel', x=-27.16, y=141.00, z=155.15]]
+	Chunk stats: 4096, 449
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,84,0), Section: (at 0,4,0 in 0,5,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 14161 game time, 14161 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+	pehkui:debug/render/entity: minecraft:player
+Stacktrace:
+	at net.minecraft.client.multiplayer.ClientLevel.m_6026_(ClientLevel.java:455) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_clientworldclass,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_clientworldclass,pl:mixin:APP:citadel.mixins.json:client.ClientLevelMixin from mod citadel,pl:mixin:APP:majruszlibrary-common.mixins.json:MixinClientLevel from mod majruszlibrary,pl:mixin:APP:lithium.mixins.json:chunk.entity_class_groups.ClientWorldMixin from mod radium,pl:mixin:APP:pehkui.mixins.json:client.ClientWorldMixin from mod pehkui,pl:mixin:APP:starlight.mixins.json:client.world.ClientLevelMixin from mod starlight,pl:mixin:APP:bclib.mixins.client.json:ClientLevelMixin from mod bclib,pl:mixin:APP:architectury.mixins.json:MixinClientLevel from mod architectury,pl:mixin:APP:fabric-lifecycle-events-v1.client.mixins.json:ClientWorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:alexscaves.mixins.json:client.ClientLevelMixin from mod alexscaves,pl:mixin:APP:embeddium.mixins.json:core.world.biome.ClientWorldMixin from mod embeddium,pl:mixin:APP:embeddium.mixins.json:core.world.map.ClientWorldMixin from mod embeddium,pl:mixin:APP:embeddium.mixins.json:features.render.world.sky.ClientWorldMixin from mod embeddium,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91354_(Minecraft.java:2319) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:735) ~[client-1.20.1-20230612.114412-srg.jar%23484!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:218) ~[1.20.1-forge-47.2.0.jar:?] {re:classloading,pl:connector_pre_launch:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.2.0.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Resources for lucky:fire_lucky_block, vanilla, mod_resources, fabric, overrides_pack, builtin/DAGoldenSwetBallFixClient
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.8, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 2199883720 bytes (2097 MiB) / 4194304000 bytes (4000 MiB) up to 10737418240 bytes (10240 MiB)
+	CPUs: 24
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 9 5900X 12-Core Processor            
+	Identifier: AuthenticAMD Family 25 Model 33 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.70
+	Number of physical packages: 1
+	Number of physical CPUs: 12
+	Number of logical CPUs: 24
+	Graphics card #0 name: NVIDIA GeForce RTX 3080
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2216
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.5612
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.60
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.60
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 34799.08
+	Virtual memory used (MB): 21288.88
+	Swap memory total (MB): 2122.18
+	Swap memory used (MB): 73.64
+	JVM Flags: 9 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx10G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	Launched Version: 1.20.1-forge-47.2.0
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: NVIDIA GeForce RTX 3080/PCIe/SSE2 GL version 4.6.0 NVIDIA 556.12, NVIDIA Corporation
+	Window size: 1920x1080
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: vanilla, mod_resources, fabric, builtin/overrides_pack
+	Current Language: en_us
+	CPU: 24x AMD Ryzen 9 5900X 12-Core Processor 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['comanderdarkirby'/312, l='ServerLevel[1.20.1 survival]', x=-27.16, y=141.00, z=155.15]]
+	Data Packs: vanilla, mod:moredoors (incompatible), mod:playeranimator (incompatible), mod:triqueapi, mod:betteramethyst, mod:fabric_rendering_fluids_v1, mod:netherwart (incompatible), mod:fabric_models_v0, mod:betternether, mod:fabric_convention_tags_v1, mod:modernfix (incompatible), mod:fabric_command_api_v1, mod:fabric_block_view_api_v2, mod:fabric_command_api_v2, mod:guardvillagers (incompatible), mod:zume (incompatible), mod:ironbookshelves, mod:taxoa, mod:simply_houses (incompatible), mod:fabric_screen_api_v1, mod:cloth_config (incompatible), mod:ctov, mod:embeddium, mod:structure_gel, mod:repurposed_structures, mod:fabric_game_rule_api_v1, mod:explorify (incompatible), mod:ironfurnaces, mod:mob_pets, mod:mr_tidal_towns, mod:spark (incompatible), mod:structureexpansion (incompatible), mod:curios (incompatible), mod:mr_dungeons_andtaverns (incompatible), mod:bedrockplus (incompatible), mod:fabric_entity_events_v1, mod:soulfired, mod:cumulus_menus, mod:fabric_rendering_data_attachment_v1, mod:nitrogen_internals, mod:l2library (incompatible), mod:disenchanting (incompatible), mod:enchantinginfuser, mod:majruszlibrary (incompatible), mod:phenomena (incompatible), mod:fabric_client_tags_api_v1, mod:fabric_dimensions_v1, mod:radium, mod:l2tabs (incompatible), mod:fabric_model_loading_api_v1, mod:jei, mod:nameless_trinkets (incompatible), mod:chainmailed (incompatible), mod:pehkui (incompatible), mod:fabric_screen_handler_api_v1, mod:bloxysstructures, mod:mr_ships, mod:kobolds, mod:ringsofascension (incompatible), mod:fabric_rendering_v1, mod:fabric_renderer_indigo, mod:travelersbackpack, mod:naturescompass, mod:l2screentracker (incompatible), mod:adorabuild_structures (incompatible), mod:rare_ice (incompatible), mod:starlight (incompatible), mod:memoryleakfix (incompatible), mod:imst, mod:fabric_particles_v1, mod:puzzlesaccessapi, mod:rubidium_extras (incompatible), mod:dungeons_arise_seven_seas, mod:forge, mod:l2artifacts (incompatible), mod:ironchest, mod:dungeons_arise, mod:lucky (incompatible), mod:terrablender (incompatible), mod:biomesoplenty (incompatible), mod:fabric_api_base, mod:forgeconfigscreens, mod:bettercombat (incompatible), mod:cold, mod:fabric_block_api_v1, mod:fabric_resource_conditions_api_v1, mod:easy_emerald (incompatible), mod:xaerominimap, mod:fabric_item_group_api_v1, mod:aquacombat, mod:wits (incompatible), mod:fabric_registry_sync_v0, mod:fabric_recipe_api_v1, mod:fabric_object_builder_api_v1, mod:puzzleslib, mod:deep_dark_regrowth, mod:aquaculture, mod:knighys_additions, mod:fabric_sound_api_v1, mod:textrues_embeddium_options (incompatible), mod:fabric_message_api_v1, mod:betterend, mod:aquamirae (incompatible), mod:uncraftingtable76 (incompatible), mod:mcpitanlib (incompatible), mod:responsiveshields (incompatible), mod:skyvillages, mod:foodexpansion, mod:fabric_renderer_api_v1, mod:embeddiumplus (incompatible), mod:geckolib, mod:fabric_item_api_v1, mod:aether, mod:lost_aether_content, mod:deep_aether (incompatible), mod:aeroblender (incompatible), mod:aether_redux, mod:illagerinvasion, mod:incendium, mod:gpumemleakfix (incompatible), mod:citadel (incompatible), mod:alexsmobs (incompatible), mod:fabric_data_attachment_api_v1, mod:mixinextras (incompatible), mod:i_wanna_travel, mod:relics, mod:takesapillage (incompatible), mod:sculkhorde (incompatible), mod:wunderlib, mod:additionalstructures, mod:medieval_buildings (incompatible), mod:fabric_api, mod:l2damagetracker (incompatible), mod:bclib, mod:fabric_content_registries_v0, mod:the_pillager_legion_, mod:ironbows (incompatible), mod:diamond_apples, mod:fabric_api_lookup_api_v1, mod:ender_dragon_loot_, mod:lionfishapi (incompatible), mod:dungeons_enhanced, mod:trimeffects (incompatible), mod:lapis_lazuli, mod:hole_filler_mod, mod:collective, mod:gunpowderlib, mod:connectormod, mod:wardentools, mod:deeperdarker, mod:architectury (incompatible), mod:enderitemod, mod:identity (incompatible), mod:fabric_loot_api_v2, mod:cupboard (incompatible), mod:voidscape (incompatible), mod:fabric_networking_api_v1, mod:fabric_lifecycle_events_v1, mod:fabric_key_binding_api_v1, mod:fabric_transfer_api_v1, mod:shrines (incompatible), mod:quickstack (incompatible), mod:octolib (incompatible), mod:nourished_nether, mod:soaringstructures2, mod:monster_hunter_villager, mod:fabric_resource_loader_v0, mod:l2complements (incompatible), mod:obscure_api (incompatible), mod:monstrous_slimes, mod:amethysttoolsmod, mod:oooh_pinky (incompatible), mod:structory, mod:fabledweaponry, mod:fabric_mining_level_api_v1, mod:artifacts, mod:enchantment_reveal (incompatible), mod:badmobs (incompatible), mod:explorerscompass, mod:morevanillashields, mod:fabric_transitive_access_wideners_v1, mod:tarotcards, mod:friendsandfoes (incompatible), mod:portalgun (incompatible), mod:ancient_debris_in_overworld, mod:alexscaves, mod:simplyswords (incompatible), mod:knavesneeds (incompatible), mod:bettercreeper, mod:fabric_blockrenderlayer_v1, mod:mixinsquared (incompatible), mod:jade (incompatible), mod:exchangers, mod:potionflasks (incompatible), mod:mr_reds_morestructures, mod:modulargolems (incompatible), mod:mr_camps_castles_carriages, mod:betterchunkloading (incompatible), mod:fabric_biome_api_v1, mod:wabi_sabi_structures, mod:mvs (incompatible), mod:ferritecore (incompatible), mod:taxdv, mod:echowardensummonforge, mod:l2itemselector (incompatible), mod:majruszsenchantments (incompatible), mod:allarrowsinfinityfix (incompatible), mod:burrowers, mod:expandability (incompatible), mod:healingcampfire, mod:fabric_data_generation_api_v1, mod:fabric_events_interaction_v0, mod:nbc_mr (incompatible), mod:additional_enchantments (incompatible), Resources for lucky:fire_lucky_block (incompatible), builtin/DAGoldenSwetBallAetherReduxFix (incompatible), builtin/aether_accessories, builtin/aether_redux_compat (incompatible), builtin/data/cloudbed, builtin/data/deep_aether_data, builtin/lost_aether_content_compat (incompatible), fabric, voidscape_aether_compat (incompatible)
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Sinytra Connector: 1.0.0-beta.36+1.20.1
+		SINYTRA CONNECTOR IS PRESENT!
+		Please verify issues are not caused by Connector before reporting them to mod authors. If you're unsure, file a report on Connector's issue tracker.
+		Connector's issue tracker can be found at https://github.com/Sinytra/Connector/issues.
+		Installed Fabric mods:
+		| ================================================== | ============================== | ============================== | ==================== |
+		| triqueapi-mc1.20.1-1.1.0_mapped_srg_1.20.1.jar     | TriQue API                     | triqueapi                      | 1                    |
+		| better-nether-9.0.10_mapped_srg_1.20.1.jar         | Better Nether                  | betternether                   | 9.0.10               |
+		| better-end-4.0.11_mapped_srg_1.20.1.jar            | Better End                     | betterend                      | 4.0.11               |
+		| bclib-3.0.14$wunderlib-1.1.5_mapped_srg_1.20.1.jar | WunderLib                      | wunderlib                      | 1.1.5                |
+		| bclib-3.0.14_mapped_srg_1.20.1.jar                 | BCLib                          | bclib                          | 3.0.14               |
+		| wardentools-2.4.0+mc1.20.1_mapped_srg_1.20.1.jar   | Warden Tools                   | wardentools                    | 2.4.0mc1.20.1        |
+		| Soaring-Structures-2-1.20.1-2.5.1-FABRIC_mapped_sr | Soaring Structures 2           | soaringstructures2             | 1.20.1 - 2.5.1       |
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar mixin-transmogrifier TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar connector_loader TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		More+Doors-1.20-1.5-Forge.jar                     |More Doors                    |moredoors                     |1.20 v1.5           |DONE      |Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2-rc1+1.20.jar     |Player Animator               |playeranimator                |1.0.2-rc1+1.20      |DONE      |Manifest: NOSIGNATURE
+		triqueapi-mc1.20.1-1.1.0_mapped_srg_1.20.1.jar    |TriQue API                    |triqueapi                     |1                   |DONE      |Manifest: NOSIGNATURE
+		1.20.1-forge-betteramethyst-1.0.4.jar             |Even Better Amethyst          |betteramethyst                |1.0.4               |DONE      |Manifest: NOSIGNATURE
+		fabric-rendering-fluids-v1-3.0.28+4ac5e37a77.jar  |Fabric Rendering Fluids (v1)  |fabric_rendering_fluids_v1    |3.0.28+4ac5e37a77   |DONE      |Manifest: NOSIGNATURE
+		netherwart-1.20.1-6-forge.jar                     |Nether Wart Blocks to Nether W|netherwart                    |1.20.1-6-forge      |DONE      |Manifest: NOSIGNATURE
+		fabric-models-v0-0.4.2+7c3892a477.jar             |Fabric Models (v0)            |fabric_models_v0              |0.4.2+7c3892a477    |DONE      |Manifest: NOSIGNATURE
+		better-nether-9.0.10_mapped_srg_1.20.1.jar        |Better Nether                 |betternether                  |9.0.10              |DONE      |Manifest: NOSIGNATURE
+		fabric-convention-tags-v1-1.5.5+fa3d1c0177.jar    |Fabric Convention Tags        |fabric_convention_tags_v1     |1.5.5+fa3d1c0177    |DONE      |Manifest: NOSIGNATURE
+		modernfix-forge-5.13.0+mc1.20.1.jar               |ModernFix                     |modernfix                     |5.13.0+mc1.20.1     |DONE      |Manifest: NOSIGNATURE
+		fabric-command-api-v1-1.2.34+f71b366f77.jar       |Fabric Command API (v1)       |fabric_command_api_v1         |1.2.34+f71b366f77   |DONE      |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.1+0767707077.jar     |Fabric BlockView API (v2)     |fabric_block_view_api_v2      |1.0.1+0767707077    |DONE      |Manifest: NOSIGNATURE
+		fabric-command-api-v2-2.2.13+561530ec77.jar       |Fabric Command API (v2)       |fabric_command_api_v2         |2.2.13+561530ec77   |DONE      |Manifest: NOSIGNATURE
+		guardvillagers-1.20.1-1.6.6.jar                   |Guard Villagers               |guardvillagers                |1.20.1-1.6.6        |DONE      |Manifest: NOSIGNATURE
+		zume-0.12.1.jar                                   |Zume                          |zume                          |0.12.1              |DONE      |Manifest: NOSIGNATURE
+		ironbookshelves-1.20.1-1.2.5-forge.jar            |Iron Bookshelves              |ironbookshelves               |1.20.1-1.2.5-forge  |DONE      |Manifest: NOSIGNATURE
+		TaxOceanArchitect+M.1.20.1+ForM.1.0.0.jar         |Tax' Ocean Architect          |taxoa                         |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		SimplyHouses-1.1.4-1.20.1-forge.jar               |Simply Houses                 |simply_houses                 |1.1.4-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		fabric-screen-api-v1-2.0.8+45a670a577.jar         |Fabric Screen API (v1)        |fabric_screen_api_v1          |2.0.8+45a670a577    |DONE      |Manifest: NOSIGNATURE
+		Cloth-Config-API-Forge-1.20.1.jar                 |Cloth Config v10 API          |cloth_config                  |11.1.106            |DONE      |Manifest: NOSIGNATURE
+		ctov-3.3.6.jar                                    |ChoiceTheorem's Overhauled Vil|ctov                          |3.3.6               |DONE      |Manifest: NOSIGNATURE
+		embeddium-0.3.7+mc1.20.1.jar                      |Embeddium                     |embeddium                     |0.3.7+mc1.20.1      |DONE      |Manifest: NOSIGNATURE
+		structure_gel-1.20.1-2.16.0.jar                   |Structure Gel API             |structure_gel                 |2.16.0              |DONE      |Manifest: NOSIGNATURE
+		repurposed_structures-7.1.11+1.20.1-forge.jar     |Repurposed Structures         |repurposed_structures         |7.1.11+1.20.1-forge |DONE      |Manifest: NOSIGNATURE
+		fabric-game-rule-api-v1-1.0.40+683d4da877.jar     |Fabric Game Rule API (v1)     |fabric_game_rule_api_v1       |1.0.40+683d4da877   |DONE      |Manifest: NOSIGNATURE
+		Explorify v1.5.0 f10-48.jar                       |Explorify                     |explorify                     |1.5.0               |DONE      |Manifest: NOSIGNATURE
+		ironfurnaces-1.20.1-4.1.3.jar                     |Iron Furnaces                 |ironfurnaces                  |4.1.3               |DONE      |Manifest: NOSIGNATURE
+		MobPets-1.20.1-1.1.8.jar                          |Mob Pets                      |mob_pets                      |1.1.8               |DONE      |Manifest: NOSIGNATURE
+		tidal-towns-1.2.jar                               |Tidal Towns                   |mr_tidal_towns                |1.2                 |DONE      |Manifest: NOSIGNATURE
+		spark-1.10.53-forge.jar                           |spark                         |spark                         |1.10.53             |DONE      |Manifest: NOSIGNATURE
+		structure-expansion-2.0.1-build.11.jar            |Structure Expansion           |structureexpansion            |2.0.1-build.11      |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.6.1+1.20.1.jar                     |Curios API                    |curios                        |5.6.1+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		dungeons-and-taverns-3.0.3.f[Forge].jar           |Dungeons and Taverns          |mr_dungeons_andtaverns        |3.0.3.f             |DONE      |Manifest: NOSIGNATURE
+		(Forge)BedrockPlusMod-1.20.x-1.6.jar              |Bedrock Plus Mod              |bedrockplus                   |1.6                 |DONE      |Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.6.0+6274ab9d77.jar      |Fabric Entity Events (v1)     |fabric_entity_events_v1       |1.6.0+6274ab9d77    |DONE      |Manifest: NOSIGNATURE
+		soulfired-1.20.1-3.2.1.0-forge.jar                |Soul fire'd                   |soulfired                     |3.2.1.0             |DONE      |Manifest: NOSIGNATURE
+		cumulus_menus-1.20.1-1.0.0-neoforge.jar           |Cumulus                       |cumulus_menus                 |1.20.1-1.0.0-neoforg|DONE      |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.37+a6081af|Fabric Rendering Data Attachme|fabric_rendering_data_attachme|0.3.37+a6081afc77   |DONE      |Manifest: NOSIGNATURE
+		nitrogen_internals-1.20.1-1.0.1-neoforge.jar      |Nitrogen                      |nitrogen_internals            |1.20.1-1.0.1-neoforg|DONE      |Manifest: NOSIGNATURE
+		l2library-2.4.28.jar                              |L2 Library                    |l2library                     |2.4.28              |DONE      |Manifest: NOSIGNATURE
+		Disenchanting-forge-1.20.1-2.2.4.jar              |Disenchanting                 |disenchanting                 |2.2.3               |DONE      |Manifest: NOSIGNATURE
+		EnchantingInfuser-v8.0.2-1.20.1-Forge.jar         |Enchanting Infuser            |enchantinginfuser             |8.0.2               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		majrusz-library-forge-1.20.1-7.0.3.jar            |Majrusz Library               |majruszlibrary                |7.0.3               |DONE      |Manifest: NOSIGNATURE
+		Phenomena-2.3.2c-1.20.jar                         |Phenomena Structures          |phenomena                     |2.3.2b-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		fabric-client-tags-api-v1-1.1.2+5d6761b877.jar    |Fabric Client Tags            |fabric_client_tags_api_v1     |1.1.2+5d6761b877    |DONE      |Manifest: NOSIGNATURE
+		fabric-dimensions-v1-2.1.54+8005d10d77.jar        |Fabric Dimensions API (v1)    |fabric_dimensions_v1          |2.1.54+8005d10d77   |DONE      |Manifest: NOSIGNATURE
+		radium-mc1.20.1-0.12.2+git.5f80f74.jar            |Radium                        |radium                        |0.12.2+git.5f80f74  |DONE      |Manifest: NOSIGNATURE
+		l2tabs-0.3.3.jar                                  |L2 Tabs                       |l2tabs                        |0.3.3               |DONE      |Manifest: NOSIGNATURE
+		fabric-model-loading-api-v1-1.0.3+6274ab9d77.jar  |Fabric Model Loading API (v1) |fabric_model_loading_api_v1   |1.0.3+6274ab9d77    |DONE      |Manifest: NOSIGNATURE
+		jei-1.20.1-forge-15.3.0.1.jar                     |Just Enough Items             |jei                           |15.3.0.1            |DONE      |Manifest: NOSIGNATURE
+		Nameless+Trinkets-1.20.1-1.7.8.jar                |Nameless Trinkets             |nameless_trinkets             |1.20.1-1.7.8        |DONE      |Manifest: NOSIGNATURE
+		chainmailed-1.2.jar                               |ChainMailed                   |chainmailed                   |1.2                 |DONE      |Manifest: NOSIGNATURE
+		Pehkui-3.7.12+1.20.1-forge.jar                    |Pehkui                        |pehkui                        |3.7.12+1.20.1-forge |DONE      |Manifest: NOSIGNATURE
+		fabric-screen-handler-api-v1-1.3.30+561530ec77.jar|Fabric Screen Handler API (v1)|fabric_screen_handler_api_v1  |1.3.30+561530ec77   |DONE      |Manifest: NOSIGNATURE
+		bloxysstructures-1.16.0.jar                       |BloxysStructures              |bloxysstructures              |1.16.0              |DONE      |Manifest: NOSIGNATURE
+		ships-3.0.1.jar                                   |Ships                         |mr_ships                      |3.0.1               |DONE      |Manifest: NOSIGNATURE
+		Kobolds-2.10.1.jar                                |Kobolds                       |kobolds                       |2.10.1              |DONE      |Manifest: NOSIGNATURE
+		RingsOfAscension-1.20.1-2.0.1.jar                 |Rings of Ascension            |ringsofascension              |2.0.1               |DONE      |Manifest: NOSIGNATURE
+		fabric-rendering-v1-3.0.8+1c0ea72177.jar          |Fabric Rendering (v1)         |fabric_rendering_v1           |3.0.8+1c0ea72177    |DONE      |Manifest: NOSIGNATURE
+		fabric-renderer-indigo-1.5.1+67f9824077.jar       |Fabric Renderer - Indigo      |fabric_renderer_indigo        |1.5.1+67f9824077    |DONE      |Manifest: NOSIGNATURE
+		TravelersBackpack-1.20.1-9.1.11.jar               |Traveler's Backpack           |travelersbackpack             |9.1.11              |DONE      |Manifest: NOSIGNATURE
+		NaturesCompass-1.20.1-1.11.2-forge.jar            |Nature's Compass              |naturescompass                |1.20.1-1.11.2-forge |DONE      |Manifest: NOSIGNATURE
+		l2screentracker-0.1.4.jar                         |L2 Screen Tracker             |l2screentracker               |0.1.4               |DONE      |Manifest: NOSIGNATURE
+		adorabuild-structures-2.2.0-forge-1.20.x.jar      |AdoraBuild: Structures        |adorabuild_structures         |2.2.0               |DONE      |Manifest: NOSIGNATURE
+		rare-ice-0.6.0.jar                                |Rare Ice                      |rare_ice                      |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		starlight-1.1.2+forge.1cda73c.jar                 |Starlight                     |starlight                     |1.1.2+forge.1cda73c |DONE      |Manifest: NOSIGNATURE
+		memoryleakfix-forge-1.17+-1.1.2.jar               |Memory Leak Fix               |memoryleakfix                 |1.1.2               |DONE      |Manifest: NOSIGNATURE
+		imst-2.1.0.jar                                    |Immersive Structures          |imst                          |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		fabric-particles-v1-1.1.2+78e1ecb877.jar          |Fabric Particles (v1)         |fabric_particles_v1           |1.1.2+78e1ecb877    |DONE      |Manifest: NOSIGNATURE
+		puzzlesaccessapi-forge-8.0.7.jar                  |Puzzles Access Api            |puzzlesaccessapi              |8.0.7               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		rubidium_extras-1.20.1_v1.4.3.jar                 |Rubidium Extras               |rubidium_extras               |1.20.1_v1.4.3       |DONE      |Manifest: NOSIGNATURE
+		DungeonsAriseSevenSeas-1.20.x-1.0.2-forge.jar     |When Dungeons Arise: Seven Sea|dungeons_arise_seven_seas     |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.2.0-universal.jar                 |Forge                         |forge                         |47.2.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		l2artifacts-2.4.18.jar                            |L2 Artifacts                  |l2artifacts                   |2.4.18              |DONE      |Manifest: NOSIGNATURE
+		ironchest-1.20.1-14.4.4.jar                       |Iron Chests                   |ironchest                     |1.20.1-14.4.4       |DONE      |Manifest: NOSIGNATURE
+		DungeonsArise-1.20.1-2.1.57-release.jar           |When Dungeons Arise           |dungeons_arise                |2.1.57-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		client-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		lucky-block-forge-1.20.1-13.0.jar                 |Lucky Block                   |lucky                         |1.20.1-13.0         |DONE      |Manifest: NOSIGNATURE
+		TerraBlender-forge-1.20.1-3.0.0.169.jar           |TerraBlender                  |terrablender                  |3.0.0.169           |DONE      |Manifest: NOSIGNATURE
+		BiomesOPlenty-1.20.1-18.0.0.592.jar               |Biomes O' Plenty              |biomesoplenty                 |18.0.0.592          |DONE      |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.31+ef105b4977.jar             |Fabric API Base               |fabric_api_base               |0.4.31+ef105b4977   |DONE      |Manifest: NOSIGNATURE
+		ForgeConfigScreens-v8.0.2-1.20.1-Forge.jar        |Forge Config Screens          |forgeconfigscreens            |8.0.2               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		bettercombat-forge-1.8.1+1.20.1.jar               |Better Combat                 |bettercombat                  |1.8.1+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		Expand, Explore-1.2.2.jar                         |Cold                          |cold                          |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		fabric-block-api-v1-1.0.11+0e6cb7f777.jar         |Fabric Block API (v1)         |fabric_block_api_v1           |1.0.11+0e6cb7f777   |DONE      |Manifest: NOSIGNATURE
+		fabric-resource-conditions-api-v1-2.3.8+9ad825cd77|Fabric Resource Conditions API|fabric_resource_conditions_api|2.3.8+9ad825cd77    |DONE      |Manifest: NOSIGNATURE
+		EasyEmerald-Forge-1.20.1-1.5.3.jar                |Easy Emerald                  |easy_emerald                  |1.4.15              |DONE      |Manifest: NOSIGNATURE
+		Xaeros_Minimap_23.8.4_Forge_1.20.jar              |Xaero's Minimap               |xaerominimap                  |23.8.4              |DONE      |Manifest: NOSIGNATURE
+		fabric-item-group-api-v1-4.0.12+c9161c2d77.jar    |Fabric Item Group API (v1)    |fabric_item_group_api_v1      |4.0.12+c9161c2d77   |DONE      |Manifest: NOSIGNATURE
+		aquacombat 1.1.jar                                |Aqua combat                   |aquacombat                    |1.1                 |DONE      |Manifest: NOSIGNATURE
+		wits-1.1.0+1.20.1-forge.jar                       |WITS                          |wits                          |1.1.0+1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		fabric-registry-sync-v0-2.3.3+1c0ea72177.jar      |Fabric Registry Sync (v0)     |fabric_registry_sync_v0       |2.3.3+1c0ea72177    |DONE      |Manifest: NOSIGNATURE
+		fabric-recipe-api-v1-1.0.21+514a076577.jar        |Fabric Recipe API (v1)        |fabric_recipe_api_v1          |1.0.21+514a076577   |DONE      |Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-11.1.3+2174fc8477.jar|Fabric Object Builder API (v1)|fabric_object_builder_api_v1  |11.1.3+2174fc8477   |DONE      |Manifest: NOSIGNATURE
+		PuzzlesLib-v8.1.11-1.20.1-Forge.jar               |Puzzles Lib                   |puzzleslib                    |8.1.11              |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		Deep Dark Regrowth 1.2.6.1 - 1.20.1.jar           |Deep Dark: Regrowth           |deep_dark_regrowth            |1.2.6.1             |DONE      |Manifest: NOSIGNATURE
+		Aquaculture-1.20.1-2.5.1.jar                      |Aquaculture 2                 |aquaculture                   |2.5.1               |DONE      |Manifest: NOSIGNATURE
+		knighys_additions-1REDUX.showcaese-forge-1.20.1.ja|Knighy's Mystical Creatures   |knighys_additions             |1.                  |DONE      |Manifest: NOSIGNATURE
+		fabric-sound-api-v1-1.0.13+4f23bd8477.jar         |Fabric Sound API (v1)         |fabric_sound_api_v1           |1.0.13+4f23bd8477   |DONE      |Manifest: NOSIGNATURE
+		textrues_embeddium_options-0.1.5+mc1.20.1.jar     |TexTrue's Embeddium Options   |textrues_embeddium_options    |0.1.5+mc1.20.1      |DONE      |Manifest: NOSIGNATURE
+		fabric-message-api-v1-5.1.9+52cc178c77.jar        |Fabric Message API (v1)       |fabric_message_api_v1         |5.1.9+52cc178c77    |DONE      |Manifest: NOSIGNATURE
+		better-end-4.0.11_mapped_srg_1.20.1.jar           |Better End                    |betterend                     |4.0.11              |DONE      |Manifest: NOSIGNATURE
+		aquamirae-6.API15.jar                             |Aquamirae                     |aquamirae                     |6.API15             |DONE      |Manifest: NOSIGNATURE
+		UncraftingTable-forge-1.3.1.jar                   |Uncrafting Table              |uncraftingtable76             |1.3.1               |DONE      |Manifest: NOSIGNATURE
+		mcpitanlib-2.2.3-1.20.1-forge.jar                 |MCPitanLib                    |mcpitanlib                    |2.2.3-1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		responsiveshields-2.2.jar                         |Responsive Shields            |responsiveshields             |2.2                 |DONE      |Manifest: NOSIGNATURE
+		SkyVillages-1.0.2-1.20.1-forge-release.jar        |Sky Villages                  |skyvillages                   |1.0.2-1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		foodexpansion-1.10.0.jar                          |Food Expansion: Reimagined    |foodexpansion                 |1.10.0              |DONE      |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.2.1+1d29b44577.jar       |Fabric Renderer API (v1)      |fabric_renderer_api_v1        |3.2.1+1d29b44577    |DONE      |Manifest: NOSIGNATURE
+		embeddiumplus-1.20.1-v1.2.4.jar                   |Embeddium++                   |embeddiumplus                 |1.2.4               |DONE      |Manifest: NOSIGNATURE
+		GeckoLib-Mod-Forge-1.20.1.jar                     |GeckoLib 4                    |geckolib                      |4.2.3               |DONE      |Manifest: NOSIGNATURE
+		fabric-item-api-v1-2.1.28+2272fc7f77.jar          |Fabric Item API (v1)          |fabric_item_api_v1            |2.1.28+2272fc7f77   |DONE      |Manifest: NOSIGNATURE
+		aether-1.20.1-1.0.0-neoforge.jar                  |The Aether                    |aether                        |1.20.1-1.0.0-neoforg|DONE      |Manifest: NOSIGNATURE
+		lost_aether_content-1.20.1-1.2.3.jar              |Aether: Lost Content          |lost_aether_content           |1.2.3               |DONE      |Manifest: NOSIGNATURE
+		deep_aether-1.20.1-1.0.13.1.jar                   |Deep Aether                   |deep_aether                   |1.20.1-1.0.13.1     |DONE      |Manifest: NOSIGNATURE
+		aeroblender-1.20.1-1.0.1-neoforge.jar             |AeroBlender                   |aeroblender                   |1.20.1-1.0.1-neoforg|DONE      |Manifest: NOSIGNATURE
+		aether-redux-1.3.4-1.20.1-neoforge.jar            |The Aether: Redux             |aether_redux                  |1.20.1              |DONE      |Manifest: NOSIGNATURE
+		IllagerInvasion-v8.0.3-1.20.1-Forge.jar           |Illager Invasion              |illagerinvasion               |8.0.3               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		Incendium_1.20.4_v5.3.4.jar                       |Incendium                     |incendium                     |5.3.4               |DONE      |Manifest: NOSIGNATURE
+		gpumemleakfix-1.20.1-1.6.jar                      |Gpu memory leak fix           |gpumemleakfix                 |1.20.1-1.6          |DONE      |Manifest: NOSIGNATURE
+		citadel-2.5.3-1.20.1.jar                          |Citadel                       |citadel                       |2.5.3               |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.22.7.jar                              |Alex's Mobs                   |alexsmobs                     |1.22.7              |DONE      |Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.0.0+30ef839e77.jar|Fabric Data Attachment API (v1|fabric_data_attachment_api_v1 |1.0.0+30ef839e77    |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.2.0-beta.9.jar                |MixinExtras                   |mixinextras                   |0.2.0-beta.9        |DONE      |Manifest: NOSIGNATURE
+		i_wanna_travel-0.1.jar                            |I Wanna Travel                |i_wanna_travel                |0.1                 |DONE      |Manifest: NOSIGNATURE
+		relics-1.20.1-0.5.2.1.jar                         |Relics                        |relics                        |0.5.2.1             |DONE      |Manifest: NOSIGNATURE
+		takesapillage-1.0.3-1.20.1.jar                    |It Takes A Pillage            |takesapillage                 |1.0.3               |DONE      |Manifest: NOSIGNATURE
+		sculkhorde-1.20.1-0.9.4.jar                       |Sculk Horde                   |sculkhorde                    |1.20.1-0.9.4        |DONE      |Manifest: NOSIGNATURE
+		bclib-3.0.14$wunderlib-1.1.5_mapped_srg_1.20.1.jar|WunderLib                     |wunderlib                     |1.1.5               |DONE      |Manifest: NOSIGNATURE
+		Rex's-AdditionalStructures-1.20.x-(v.4.2.1).jar   |Additional Structures         |additionalstructures          |4.2.1               |DONE      |Manifest: NOSIGNATURE
+		medieval_buildings-forge-1.0.2.jar                |Medieval Buildings            |medieval_buildings            |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		fabric-api-0.92.0+1.11.3+1.20.1.jar               |Forgified Fabric API          |fabric_api                    |0.92.0+1.11.3+1.20.1|DONE      |Manifest: NOSIGNATURE
+		l2damagetracker-0.3.9.jar                         |L2 Damage Tracker             |l2damagetracker               |0.3.9               |DONE      |Manifest: NOSIGNATURE
+		bclib-3.0.14_mapped_srg_1.20.1.jar                |BCLib                         |bclib                         |3.0.14              |DONE      |Manifest: NOSIGNATURE
+		fabric-content-registries-v0-4.0.11+a670df1e77.jar|Fabric Content Registries (v0)|fabric_content_registries_v0  |4.0.11+a670df1e77   |DONE      |Manifest: NOSIGNATURE
+		the_pillager_legion_-1.4.0-forge-1.20.1.jar       |The Pillager Legion           |the_pillager_legion_          |1.4.0               |DONE      |Manifest: NOSIGNATURE
+		ironbows-1.20.1-FORGE-1.9.jar                     |Iron Bows (Forge)             |ironbows                      |1.20.1-FORGE-1.9    |DONE      |Manifest: NOSIGNATURE
+		diamond_apples_1.1_1.20.1.jar                     |Diamond Apples                |diamond_apples                |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		fabric-api-lookup-api-v1-1.6.36+67f9824077.jar    |Fabric API Lookup API (v1)    |fabric_api_lookup_api_v1      |1.6.36+67f9824077   |DONE      |Manifest: NOSIGNATURE
+		ender_dragon_loot_-1.7.4.jar                      |Ender Dragon Loot 1.20.1      |ender_dragon_loot_            |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		lionfishapi-1.9.jar                               |LionfishAPI                   |lionfishapi                   |1.9                 |DONE      |Manifest: NOSIGNATURE
+		dungeons_enhanced-1.20.1-5.2.2.jar                |Dungeons Enhanced             |dungeons_enhanced             |5.2.2               |DONE      |Manifest: NOSIGNATURE
+		trimeffects-1.0.3-forge.jar                       |Trim Effects                  |trimeffects                   |1.0.3-forge         |DONE      |Manifest: NOSIGNATURE
+		lapis+lazuli+mod+1.20.jar                         |lapis lazuli                  |lapis_lazuli                  |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		hole_filler_mod-1.2.8_mc-1.20.1_forge.jar         |Hole Filler Mod               |hole_filler_mod               |1.2.8               |DONE      |Manifest: NOSIGNATURE
+		collective-1.20.1-7.30.jar                        |Collective                    |collective                    |7.30                |DONE      |Manifest: NOSIGNATURE
+		GunpowderLib-1.20.2-2.2.1.jar                     |GunpowderLib                  |gunpowderlib                  |1.20.2-2.2.1        |DONE      |Manifest: 2e:cb:db:61:22:2a:6d:79:f4:22:31:8c:34:9b:cf:9f:91:ea:95:c4:bf:bb:8a:de:6e:10:c3:f0:b1:c6:ae:20
+		Connector-1.0.0-beta.36+1.20.1-mod.jar            |Connector                     |connectormod                  |1.0.0-beta.36+1.20.1|DONE      |Manifest: NOSIGNATURE
+		wardentools-2.4.0+mc1.20.1_mapped_srg_1.20.1.jar  |Warden Tools                  |wardentools                   |2.4.0mc1.20.1       |DONE      |Manifest: NOSIGNATURE
+		deeperdarker-forge-1.20.1-1.2.1.jar               |Deeper and Darker             |deeperdarker                  |1.2.1               |DONE      |Manifest: NOSIGNATURE
+		architectury-9.1.13-forge.jar                     |Architectury                  |architectury                  |9.1.13              |DONE      |Manifest: NOSIGNATURE
+		enderitemod-1.5.0-1.20.1-forge.jar                |Enderite Mod                  |enderitemod                   |1.5.0               |DONE      |Manifest: NOSIGNATURE
+		identity-2.7.1-1.20.1-forge.jar                   |Identity                      |identity                      |2.7.1-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		fabric-loot-api-v2-1.2.1+eb28f93e77.jar           |Fabric Loot API (v2)          |fabric_loot_api_v2            |1.2.1+eb28f93e77    |DONE      |Manifest: NOSIGNATURE
+		cupboard-1.20.1-2.7.jar                           |Cupboard utilities            |cupboard                      |1.20.1-2.7          |DONE      |Manifest: NOSIGNATURE
+		Voidscape-1.20.1-1.5.310.jar                      |Voidscape                     |voidscape                     |1.20.1-1.5.310      |DONE      |Manifest: NOSIGNATURE
+		fabric-networking-api-v1-1.3.11+503a202477.jar    |Fabric Networking API (v1)    |fabric_networking_api_v1      |1.3.11+503a202477   |DONE      |Manifest: NOSIGNATURE
+		fabric-lifecycle-events-v1-2.2.22+afab492177.jar  |Fabric Lifecycle Events (v1)  |fabric_lifecycle_events_v1    |2.2.22+afab492177   |DONE      |Manifest: NOSIGNATURE
+		fabric-key-binding-api-v1-1.0.37+561530ec77.jar   |Fabric Key Binding API (v1)   |fabric_key_binding_api_v1     |1.0.37+561530ec77   |DONE      |Manifest: NOSIGNATURE
+		fabric-transfer-api-v1-3.3.4+b00938ec77.jar       |Fabric Transfer API (v1)      |fabric_transfer_api_v1        |3.3.4+b00938ec77    |DONE      |Manifest: NOSIGNATURE
+		Shrines-1.20.1-6.0.2.jar                          |Shrines                       |shrines                       |1.20.1-6.0.2        |DONE      |Manifest: NOSIGNATURE
+		quickstack-1.20.1-1.jar                           |QuickStack                    |quickstack                    |1.20.1-1            |DONE      |Manifest: NOSIGNATURE
+		octolib-0.1.jar                                   |OctoLib                       |octolib                       |0.1                 |DONE      |Manifest: NOSIGNATURE
+		phantasmic-1.20.1-0.2.5.jar                       |Phantasmic                    |nourished_nether              |0.2.5               |DONE      |Manifest: NOSIGNATURE
+		Soaring-Structures-2-1.20.1-2.5.1-FABRIC_mapped_sr|Soaring Structures 2          |soaringstructures2            |1.20.1 - 2.5.1      |DONE      |Manifest: NOSIGNATURE
+		Monster+Hunter+Villager+1.1.0-1.20.1.jar          |Monster Hunter Villager       |monster_hunter_villager       |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		fabric-resource-loader-v0-0.11.10+cefbb70477.jar  |Fabric Resource Loader (v0)   |fabric_resource_loader_v0     |0.11.10+cefbb70477  |DONE      |Manifest: NOSIGNATURE
+		l2complements-2.4.40.jar                          |L2 Complements                |l2complements                 |2.4.40              |DONE      |Manifest: NOSIGNATURE
+		obscure_api-15.jar                                |Obscure API                   |obscure_api                   |15                  |DONE      |Manifest: NOSIGNATURE
+		Monstrous+Slimes+1.0-1.20.1.jar                   |Monstrous Slimes              |monstrous_slimes              |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		amethysttoolsmod-1.20.1-1.7.0.jar                 |§5Amethyst Tools Mod          |amethysttoolsmod              |1.20.1-1.7.0        |DONE      |Manifest: NOSIGNATURE
+		oooh_pinky-forge-1.20.1-2.0.jar                   |Oooh, Pinky!                  |oooh_pinky                    |1.20.1-2.0          |DONE      |Manifest: NOSIGNATURE
+		Structory_1.20.1_v1.3.2.jar                       |Structory                     |structory                     |1.3.2               |DONE      |Manifest: NOSIGNATURE
+		fabledweaponry-1.20.1-1.0.6.jar                   |Fabled Weaponry               |fabledweaponry                |1.20.1-1.0.6        |DONE      |Manifest: NOSIGNATURE
+		fabric-mining-level-api-v1-2.1.50+561530ec77.jar  |Fabric Mining Level API (v1)  |fabric_mining_level_api_v1    |2.1.50+561530ec77   |DONE      |Manifest: NOSIGNATURE
+		artifacts-forge-9.2.0.jar                         |Artifacts                     |artifacts                     |9.2.0               |DONE      |Manifest: NOSIGNATURE
+		Enchantment-Reveal-1.20.1-Forge.jar               |Enchantment Reveal            |enchantment_reveal            |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		BadMobs-1.20.1-19.0.2.jar                         |BadMobs                       |badmobs                       |19.0.2              |DONE      |Manifest: NOSIGNATURE
+		ExplorersCompass-1.20.1-1.3.3-forge.jar           |Explorer's Compass            |explorerscompass              |1.20.1-1.3.3-forge  |DONE      |Manifest: NOSIGNATURE
+		morevanillashields-1.1.0-1.20.1.jar               |More Vanilla Shields          |morevanillashields            |1.1.0-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		fabric-transitive-access-wideners-v1-4.3.1+1880499|Fabric Transitive Access Widen|fabric_transitive_access_widen|4.3.1+1880499877    |DONE      |Manifest: NOSIGNATURE
+		tarotcards-1.20-1.5.7.jar                         |Tarot Cards                   |tarotcards                    |1.20-1.5.7          |DONE      |Manifest: NOSIGNATURE
+		friendsandfoes-forge-mc1.20.1-2.0.1.jar           |Friends&Foes                  |friendsandfoes                |2.0.1               |DONE      |Manifest: NOSIGNATURE
+		portalgun-1.20.1-1.1.1.jar                        |Portal Gun Mod                |portalgun                     |1.1.1               |DONE      |Manifest: NOSIGNATURE
+		AncientDebrisIO-1.20.1-3.jar                      |Ancient Debris In Overworld   |ancient_debris_in_overworld   |3.0                 |DONE      |Manifest: NOSIGNATURE
+		alexscaves-1.1.0.jar                              |Alex's Caves                  |alexscaves                    |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		simplyswords-forge-1.51.5-1.20.1.jar              |Simply Swords                 |simplyswords                  |1.51.5-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		knavesneeds-forge-2.0+1.20.1.jar                  |Knaves' Needs                 |knavesneeds                   |2.0+1.20.1          |DONE      |Manifest: NOSIGNATURE
+		bettercreeper-1.20.1_1.3.1.jar                    |Bettercreeper                 |bettercreeper                 |1.20.1 - 1.3.1      |DONE      |Manifest: NOSIGNATURE
+		fabric-blockrenderlayer-v1-1.1.41+1d0da21e77.jar  |Fabric BlockRenderLayer Regist|fabric_blockrenderlayer_v1    |1.1.41+1d0da21e77   |DONE      |Manifest: NOSIGNATURE
+		mixinsquared-forge-0.1.1.jar                      |MixinSquared                  |mixinsquared                  |0.1.1               |DONE      |Manifest: NOSIGNATURE
+		Jade-1.20.1-forge-11.6.3.jar                      |Jade                          |jade                          |11.6.3              |DONE      |Manifest: NOSIGNATURE
+		Exchangers-1.20.1-3.5.1.jar                       |Exchangers                    |exchangers                    |1.20.1-3.5.1        |DONE      |Manifest: 2e:cb:db:61:22:2a:6d:79:f4:22:31:8c:34:9b:cf:9f:91:ea:95:c4:bf:bb:8a:de:6e:10:c3:f0:b1:c6:ae:20
+		potionflasks-1.2-forge-1.20.1.jar                 |PotionFlasks                  |potionflasks                  |1.2-forge-1.20.1    |DONE      |Manifest: NOSIGNATURE
+		reds-more-structures-1.0.8-common.jar             |Red’s More Structures         |mr_reds_morestructures        |1.0.8               |DONE      |Manifest: NOSIGNATURE
+		modulargolems-2.4.37.jar                          |Modular Golems                |modulargolems                 |2.4.37              |DONE      |Manifest: NOSIGNATURE
+		camps_castles_carriages-2.2.jar                   |Camps. Castles. Carriages.    |mr_camps_castles_carriages    |2.2                 |DONE      |Manifest: NOSIGNATURE
+		betterchunkloading-1.20.1-4.3.jar                 |betterchunkloading mod        |betterchunkloading            |1.20.1-4.3          |DONE      |Manifest: NOSIGNATURE
+		fabric-biome-api-v1-13.0.13+dd0389a577.jar        |Fabric Biome API (v1)         |fabric_biome_api_v1           |13.0.13+dd0389a577  |DONE      |Manifest: NOSIGNATURE
+		Wabi-Sabi-Structures-Mod-Forge-1.20.1.jar         |Wabi-Sabi Structures          |wabi_sabi_structures          |2.0.0-1.20          |DONE      |Manifest: NOSIGNATURE
+		mvs-4.1.2-1.20-forge.jar                          |Moog's Voyager Structures     |mvs                           |4.1.2-1.20-forge    |DONE      |Manifest: NOSIGNATURE
+		ferritecore-6.0.1-forge.jar                       |Ferrite Core                  |ferritecore                   |6.0.1               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		TaxDeepVilllager+M.1.20.1+ForM.2.0.0.jar          |Tax' Deep Villager            |taxdv                         |2.0.0               |DONE      |Manifest: NOSIGNATURE
+		EchoWardenSummonForge1_0.jar                      |EchoWardenSummonForge         |echowardensummonforge         |1.0                 |DONE      |Manifest: NOSIGNATURE
+		l2itemselector-0.1.9.jar                          |L2 Item Selector              |l2itemselector                |0.1.9               |DONE      |Manifest: NOSIGNATURE
+		majruszs-enchantments-forge-1.20.1-1.10.5.jar     |Majrusz's Enchantments        |majruszsenchantments          |1.10.5              |DONE      |Manifest: NOSIGNATURE
+		allarrowsinfinityfix-1.5-forge-mc1.20.jar         |All Arrows Infinity Fix       |allarrowsinfinityfix          |1.5                 |DONE      |Manifest: NOSIGNATURE
+		burrowers-1.1-1.20.1.jar                          |Burrowers Mod                 |burrowers                     |1.1-1.20            |DONE      |Manifest: NOSIGNATURE
+		expandability-9.0.0.jar                           |ExpandAbility                 |expandability                 |9.0.0               |DONE      |Manifest: NOSIGNATURE
+		healingcampfire-1.20.1-5.3.jar                    |Healing Campfire              |healingcampfire               |5.3                 |DONE      |Manifest: NOSIGNATURE
+		fabric-data-generation-api-v1-12.3.4+369cb3a477.ja|Fabric Data Generation API (v1|fabric_data_generation_api_v1 |12.3.4+369cb3a477   |DONE      |Manifest: NOSIGNATURE
+		fabric-events-interaction-v0-0.6.2+0d0bd5a777.jar |Fabric Events Interaction (v0)|fabric_events_interaction_v0  |0.6.2+0d0bd5a777    |DONE      |Manifest: NOSIGNATURE
+		nbc-all-2.0-1.20+.jar                             |Netherite But Cheaper         |nbc_mr                        |1.0                 |DONE      |Manifest: NOSIGNATURE
+		additional_enchantments-1.20.1-1.0.1-all.jar      |Additional Enchantments       |additional_enchantments       |1.0.1               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 41edb08a-4105-4bc3-b037-e5959cf2af29
+	FML: 47.2
+	Forge: net.minecraftforge:47.2.0
