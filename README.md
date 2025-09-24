@@ -1,4 +1,3 @@
-[Player.log](https://github.com/user-attachments/files/22504726/Player.log)
 Mono path[0] = 'C:/Program Files (x86)/Steam/steamapps/common/RimWorld/RimWorldWin64_Data/Managed'
 Mono config path = 'C:/Program Files (x86)/Steam/steamapps/common/RimWorld/MonoBleedingEdge/etc'
 [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
